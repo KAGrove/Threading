@@ -1,6 +1,7 @@
 import threading
 import time
 
+
 x = 8192
 
 def double():
@@ -13,7 +14,7 @@ def double():
 
 def half():
     global x
-    while x < 1:
+    while x > 1:
         x /= 2
         print(x)
         time.sleep(1)
