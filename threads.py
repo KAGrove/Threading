@@ -1,7 +1,12 @@
 import threading
 
-def helloworld():
-    print("Hello World!")
+def function1():
+    for x in range(1000):
+        print("ONE")
 
-t1 = threading.Thread(target=helloworld)
-t1.start()
+def function2():
+    for x in range(1000):
+        print("TWO")
+
+function1()
+function2()
